@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "Canela-Regular";
+    src: url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.eot");
+    src: url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.woff")format("woff"),
+        url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.woff2")format("woff2"),
+        url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.ttf")format("truetype"),
+        url("../fonts/web-fonts/4a24899e94d8236f671c1090cd9e068c.svg#Canela-Regular")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/web-fonts/OpenSans-Regular.ttf)format("truetype"),
+  }
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/web-fonts/OpenSans-Italic.ttf) format('woff2');
+  }
+
+ 
