@@ -1,0 +1,520 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+img {
+    border: none;
+    box-shadow: none;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+.image-radius{
+    border-radius: 50%;
+}
+.section{
+    padding: 3rem 0; 
+}
+.btn {
+    padding: 12px 25px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.btn i{
+    display: inline-block;
+}
+.bt-primary{
+    background-color: #017f73;
+    color: #ffffff;
+}
+.bt-primary i{
+    color: #ffffff;
+}
+.bt-outline{
+    border: 1px solid#017f73;
+    color: #017f73;
+}
+.bt-primary:hover{
+    background-color: rgba(1, 127, 114, 0.637);
+    color: #ffffff;
+}
+.bt-outline:hover{
+    background-color: #017f73;
+    color: #ffffff;
+}
+
+/*=========== NAV MENU ==========*/
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 20px 0;
+    z-index: 1000;
+}
+.nav-container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 15px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    top: 75%;
+    border-radius: 3px;
+    padding: 15px 20px 20px 0;
+
+}
+nav ul li ul li a{
+    color: #222222;
+}
+nav ul li ul li{
+    padding: 5px 20px;
+}
+nav ul li:hover ul {
+    display: block;
+
+}
+
+/* Menu Icon */
+.menu {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.menu span, .menu::before, .menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #333;
+    transition: 0.4s;
+}
+.menu span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu::before {
+    top: 0;
+}
+.menu::after {
+    bottom: 0;
+}
+.menu.active span {
+    opacity: 0;
+}
+.menu.active::before {
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+}
+.menu.active::after {
+    bottom: 50%;
+    transform: rotate(-45deg) translateY(50%);
+}
+
+.nav-brand {
+    display: block;
+    width: 150px;
+    height: auto;
+    transition: ease-in 0.3s ease;
+}
+.nav-brand img{
+    width: 100%;
+}
+
+/* Estilo do menu fixo ao rolar */
+.nav-fixed {
+    background: #ffffff !important;
+    padding: 0 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-fixed a {
+    color: #017f73 !important;
+}
+.nav-fixed .nav-brand{
+    width: 120px;
+    transition: ease-out 0.3s;
+}
+.nav-fixed .nav-brand img{
+    content: url('../img/logo-color.png'); /* Altere para sua logo escura */
+}
+
+
+
+nav ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    position: relative;
+    overflow: hidden
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #017f73;
+    height: 1px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+nav ul li a:active:before,nav ul li a:focus:before,nav ul li a:hover:before {
+    right: 0
+}
+
+/*=========== BACKGROUND VIDEO ============================== */
+
+/* Estilo para a section com o vídeo de fundo */
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+  
+  /* Estilo do vídeo */
+  .background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir a área sem distorcer */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+  }
+  
+  /* Estilo da camada escura */
+  .background-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Preto com 50% de transparência */
+    z-index: 1; /* Fica acima do vídeo, mas abaixo do conteúdo */
+  }
+/* Estilo da camada escura */
+.background-video .container{
+    z-index: 8;
+}
+.background-video .container h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+.background-video .container p {
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-family: "Open Sans", serif;
+    color: #ffffff;
+  }
+
+/*=========== CARDS ============================== */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10px 10px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-header{
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+}
+.card-content{
+    padding: 15px 15px;
+    text-align: left;
+}
+.card-header img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card i{
+    font-size: 29px;
+    padding: 10px 20px;
+    background: #017f73;
+    color: #fff;
+    border-radius: 5px;
+    top: -20px;
+    position: relative;
+    z-index: 999;
+
+    display: inline-block;
+    margin: 0 auto;
+}
+.card-effect{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.feactures{
+    text-align: center;
+}
+.feactures h3{
+    margin-bottom: 5px;
+}
+.feactures i{
+    font-size: 45px;
+    color: #017f73;
+}
+.feactures a{
+    color: #017f73;
+    display: inline-flex;
+}
+.feactures a i{
+    font-size: 16px;
+}
+.card-list{
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+.card-list img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.card-list-content {
+    padding: 3rem;
+}
+.card-list .btn{
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.parallax{
+    height: 65%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    display: flex;
+}
+
+.parallax h1, .parallax p{
+    color: #ffffff;
+}
+/*=========== SLIDES ============================== */
+
+
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    z-index: 10;
+}
+.overflow{
+    overflow: hidden;
+}
+.navegation{
+    display: flex;
+    padding-left: 7%;
+}
+/* Remove os ícones padrão do Swiper */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    display: none;
+}
+
+
+.navegation .swiper-button-next, 
+.navegation .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    border: 1px solid#017f73;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide .swiper-button-next, 
+.slide .swiper-button-prev {
+    margin-top: 0 !important;
+    position: relative !important;
+}
+.slide .swiper-button-next {
+    left: 15px !important;
+}
+.slide .swiper-button-prev {
+    right: 15px !important;
+}
+.slide .swiper-button-next i, 
+.slide .swiper-button-prev i {
+    font-size: 24px;
+    color: #017f73;
+}
+
+
+/* TESTIMONIALS */
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: auto;
+}
+
+/* O Swiper em si */
+.swiper {
+    position: relative;
+    overflow: hidden; /* Mantém o Swiper correto */
+    width: 100%;
+}
+
+/* Botões de navegação */
+.testimonial-next,
+.testimonial-prev {
+    position: absolute;
+    top: 40% !important;
+    transform: translateY(-50%);
+    z-index: 9999 !important; 
+    cursor: pointer;
+}
+.testimonial-next.swiper-button-disabled, .testimonial-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+.testimonial-next i, 
+.testimonial-prev i {
+    font-size: 45px;
+    color: #017f73;
+}
+/* Ajusta os botões para fora do Swiper */
+.testimonial-next {
+    right: -10px; /* Mova mais para fora se necessário */
+}
+
+.testimonial-prev {
+    left: -10px;
+}
+
+/* Remove qualquer ícone padrão do Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #017f73 !important;
+}
+/*=========== FOOTER ============================== */
+
+footer{
+    background: #f2f2f2;
+}
+footer h4{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #017f73;
+}
+footer  ul{
+    display: block;
+    list-style: none;
+}
+footer  ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #333333;
+}
+.copyright{
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+
+.hvr-underline-from-left:before {
+    background: #017f73 !important;
+    height: 1px !important;
+}
