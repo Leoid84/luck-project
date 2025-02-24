@@ -1,623 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luck Viagens</title>
-    <!--link rel="stylesheet" href="assets/css/layout.css"-->
-    <link rel="stylesheet" href="assets/css/simple-grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/hover-min.css">
-
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://static.onertravel.com/widget/search/production/styles.css">
 </head>
 <body>
-        
-  
-  
-  <!--=========== Header ========== -->
-    <div class="nav-top">
-      <div class="container">
-        <div></div>
-        <div class="nav">
+
+<!-- HEADER -->
+ 
+<header id="navbar">
+    <div class="nav-container">
+        <a class="nav-brand" href=""><img src="assets/img/logo-branco.png" alt="Luck Viagens"></a>
+        <nav>
             <ul>
-              <a href="#"><i class="bi bi-envelope"></i> marketing@luckviagens.com.br</a> |
-              <a href="#"><i class="bi bi-telephone-fill"></i> (81) 3366-6222 | (81) 3366-6223</a> |
-              <a href="#"><i class="bi bi-whatsapp"></i> (81) 99323-1583</a>
-            </ul>
-        </div>
-      </div>
-    </div>
-    <header class="navbar navbar-sticky">
-        <div class="container">
-        
-          <a class="navbar-logo" href="index.html"><img src="assets/img/logo.webp" alt="luckviagens-logo"></a>
-     
-          <!-- Menu navigation -->
-          <div class="nav-right nav-mobile">  
-              <nav class="nav">
-                  <ul class="navbar-links">
-                        <li><a href="#" class="active-link hvr-underline-from-left">Home</a></li>
-                        <li><a class="nav-link hvr-underline-from-left" href="#">Grupo Luck</a>
-                          <ul>
-                            <li><a class="hvr-underline-from-left" href="#">Sobre nós</a></li>
-                            <li><a class="hvr-underline-from-left" href="#">Políticas</a></li>
-                            <li><a class="hvr-underline-from-left" href="#">Eventos</a></li>
-                            <li><a class="hvr-underline-from-left" href="#">Corporativo</a></li>
-                          </ul>
-                        </li>
-            
-                        <li><a class="nav-link hvr-underline-from-left" href="#">Pacotes de viagem</a></li>
-                        <li><a class="nav-link hvr-underline-from-left" href="#">Receptivo</a></li>
-                        <li><a class="nav-link hvr-underline-from-left" href="#">Blog</a></li>
-                        <li><a class="nav-link hvr-underline-from-left" href="#">Fale Conosco</a></li>
-
-                        <li class="lang"><img src="assets/img/lang/brasil.png" alt="">
-                          <ul>
-                            <li class="lang"><img src="assets/img/lang/brasil.png" alt="">
-                            <li class="lang"><img src="assets/img/lang/5373324.png" alt=""> </li>
-                            <li class="lang"><img src="assets/img/lang/espanish.webp" alt=""> </li>
-                          </ul>
-                        </li>
-
-
-
+                <li><a href="http://">Home</a></li>
+                <li><a href="#">Instiucional</a>
+                    <ul>
+                        <li><a href="http://">Quem somos</a></li>
+                        <li><a href="http://">Transparencia</a></li>
                     </ul>
-                </nav>
-            </div>
-            <!-- Buton toggle -->
-            <div class="menu-toggle">
-                <div class="menu-icon">
-                    <span class="sp1"></span>
-                    <span class="sp3"></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-
-
-       <!--==================== SECTION INITIAL =========================-->
-
-
-
-                <section class="initial">
-                        <!-- Slider main container -->
-                <div class="webdoor">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-
-                        <div class="swiper-slide video-background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/webdoor.jpg')">
-                            <video autoplay loop muted poster="assets/img/sol.jpg">
-                                <source src="" type="video/mp4">
-                              </video>
-                              <div class="overlay"></div>
-                              <div class="col-6">
-                            <div class="content">
-                                <h1 data-aos="fade-up">Descubra novos destinos e viva experiências inesquecíveis!</h1>
-                                <p data-aos="fade-up"> Viajar é mais do que apenas conhecer novos lugares, é viver histórias, colecionar momentos e se conectar com diferentes culturas. 
-                                  Com a Luck, você tem acesso a pacotes exclusivos e suporte completo para tornar sua viagem inesquecível</p>
-                                <div class="buttons">
-                                
-                              </div>
-                            </div>
-                           </div>
-                        </div> 
-
-                     <!-- END Slides -->
-
-                    </div>
-
-                    ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <!--div class="swiper-pagination"></div-->
-                
-                    <!-- If we need navigation buttons 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    -->
-                
-                </div>
-
-        </section>
-
-       <div class="container search-section">
-   
-        <div class="search-container" data-aos="fade-up">
-          <div class="search-options">
-              <button class="active"><i class="bi bi-airplane-fill"></i> AÉREO</button>
-              <button><i class="bi bi-building-fill"></i> HOTÉIS</button>
-              <button><i class="bi bi-car-front-fill"></i> CARROS</button>
-
-          </div>
-      
-          <form class="search-form">
-
-            <div class="radio-group">
-              <label for="">TIPO DE VIAGEM</label>
-                <input type="radio" id="idaVolta" name="tipoViagem" checked>
-                <label for="idaVolta">Ida e Volta</label>
-
-                <input type="radio" id="somenteIda" name="tipoViagem">
-                <label for="somenteIda">Somente Ida</label>
-            </div>
-        
-           <div class="form-groups">
-              <div class="search-form-group">
-                  <label for="">DE ONDE?</label>
-                  <input type="text" placeholder="ORIGEM">
-              </div>
-      
-              <div class="search-form-group">
-                  <label for="">PARA</label>
-                  <input type="text" placeholder="DESTINO">
-              </div>
-      
-              <div class="search-form-group">
-                  <label for="">DATA</label>
-                  <input type="date">
-              </div> 
-      
-              <div class="search-form-group">
-                  <label for="">DATA DA VOLTA</label>
-                  <input id="dataVolta" type="date">
-              </div> 
+                </li>
+                <li><a href="#">Corporativo</a>
+                    <ul>
+                        <li><a href="http://">Para Pequenas Empresas</a></li>
+                        <li><a href="http://">Para Grandes Empresas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Eventos e Congressos</a>
+                    <ul>
+                        <li><a href="congresso.html">Congresso em Andamento</a></li>
+                        <li><a href="http://">Congresso Realizados</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pacotes de Viagens</a>
+                    <ul>
+                        <li><a href="http://">Nacionais</a></li>
+                        <li><a href="http://">Internacionais</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Conteudos</a>
+                    <ul>
+                        <li><a href="http://">Blog</a></li>
+                        <li><a href="http://">Galeria Memoriais</a></li>
+                    </ul>
+                </li>
               
-              <div class="search-form-group">
-                  <input type="number" placeholder="QTD. ADULTOS" min="1">
-              </div>
-      
-              <div class="search-form-group">
-                  <input type="number" placeholder="QTD. CRIANÇAS" min="0">
-              </div>
-      
-              <div class="search-form-group">
-                  <input type="number" placeholder="QTD. BEBÊS" min="0">
-              </div>
-              <button type="submit">BUSCAR</button>
-            </div>
-             
-          </form>
-      </div>
-      
-          
-       </div>
-        
+            </ul>
+        </nav>
 
-        <!--==================== SECTION 1 =========================-->
-   
+        <div></div>
 
+        <div class="menu">
+            <span></span>
+        </div>
 
-      <section class="section">
+    </div>
+</header>   
+
+<!-- SECTIONS -->
+
+<section class="">
+    <div class="background-video">
+        <video autoplay loop muted poster="assets/img/sol.jpg">
+            <source src="assets/img/12458458_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
         <div class="container">
-          <h1 class="title" data-aos="fade-up">Pacotes Nacionais</h1>
             <div class="row">
-                  <!-- Swiper -->
-                  <div class="swiper-carousel" data-aos="fade-up">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                           <div class="image-container">
-                              <img src="assets/img/img01.jpg" alt="Imagem 1">
-                           </div>  
-                            <h3>Card 1</h3>
-                            <p>Descrição do primeiro card.</p>
-                            <a href="#" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                           <div class="image-container">
-                            <img src="assets/img/img02.jpg" alt="Imagem 2">
-                            </div>
-                            <h3>Card 2</h3>
-                            <p>Descrição do segundo card.</p>
-                            <a href="#" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                           <div class="image-container">
-                            <img src="assets/img/img03.jpg" alt="Imagem 3">
-                            </div>
-                            <h3>Card 3</h3>
-                            <p>Descrição do terceiro card.</p>
-                            <a href="#" class="btn">Saiba Mais</a>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="image-container">
-                          <img src="assets/img/img04.jpg" alt="Imagem 3">
-                          </div>
-                          <h3>Card 3</h3>
-                          <p>Descrição do terceiro card.</p>
-                          <a href="#" class="btn">Saiba Mais</a>
-                      </div>
-
-                    </div>
-                    
-                <!-- Paginação -->
-                <div class="swiper-pagination"></div>
-
-            </div>
-              <!-- Botões de Navegação -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-
-               
-        </div>
-    </section>
-
-
-    <section class="section">
-      <div class="container">
-        <h1 class="title" data-aos="fade-up">Pacotes Internacionais</h1>
-          <div class="row">
-                <!-- Swiper -->
-                <div class="swiper-carousel" data-aos="fade-up">
-                  <div class="swiper-wrapper">
-                      <!-- Slide 1 -->
-                      <div class="swiper-slide">
-                         <div class="image-container">
-                            <img src="assets/img/img01.jpg" alt="Imagem 1">
-                         </div>  
-                          <h3>Card 1</h3>
-                          <p>Descrição do primeiro card.</p>
-                          <a href="#" class="btn">Saiba Mais</a>
-                      </div>
-
-                      <!-- Slide 2 -->
-                      <div class="swiper-slide">
-                         <div class="image-container">
-                          <img src="assets/img/img02.jpg" alt="Imagem 2">
-                          </div>
-                          <h3>Card 2</h3>
-                          <p>Descrição do segundo card.</p>
-                          <a href="#" class="btn">Saiba Mais</a>
-                      </div>
-
-                      <!-- Slide 3 -->
-                      <div class="swiper-slide">
-                         <div class="image-container">
-                          <img src="assets/img/img03.jpg" alt="Imagem 3">
-                          </div>
-                          <h3>Card 3</h3>
-                          <p>Descrição do terceiro card.</p>
-                          <a href="#" class="btn">Saiba Mais</a>
-                      </div>
-
-                      <div class="swiper-slide">
-                         <div class="image-container">
-                        <img src="assets/img/img04.jpg" alt="Imagem 3">
-                        </div>
-                        <h3>Card 3</h3>
-                        <p>Descrição do terceiro card.</p>
-                        <a href="#" class="btn">Saiba Mais</a>
-                    </div>
-
-                  </div>
-
-                  <!-- Paginação -->
-                  <div class="swiper-pagination"></div>
-
-          </div>
-                  <!-- Botões de Navegação -->
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-      </div>
-  </section>
-
-
-  
-  <section class="section">
-    <div class="container">
-      <h1 class="title" data-aos="fade-up">Cruzeiros</h1>
-        <div class="row">
-              <!-- Swiper -->
-              <div class="swiper-carousel" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                       <div class="image-container">
-                          <img src="assets/img/img01.jpg" alt="Imagem 1">
-                       </div>  
-                        <h3>Card 1</h3>
-                        <p>Descrição do primeiro card.</p>
-                        <a href="#" class="btn">Saiba Mais</a>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                       <div class="image-container">
-                        <img src="assets/img/img02.jpg" alt="Imagem 2">
-                        </div>
-                        <h3>Card 2</h3>
-                        <p>Descrição do segundo card.</p>
-                        <a href="#" class="btn">Saiba Mais</a>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                       <div class="image-container">
-                        <img src="assets/img/img03.jpg" alt="Imagem 3">
-                        </div>
-                        <h3>Card 3</h3>
-                        <p>Descrição do terceiro card.</p>
-                        <a href="#" class="btn">Saiba Mais</a>
-                    </div>
-
-                    <div class="swiper-slide">
-                       <div class="image-container">
-                      <img src="assets/img/img04.jpg" alt="Imagem 3">
-                      </div>
-                      <h3>Card 3</h3>
-                      <p>Descrição do terceiro card.</p>
-                      <a href="#" class="btn">Saiba Mais</a>
-                  </div>
-
+                <div class="col-7">
+                    <h1>Com a Luck suas viagens são mais tranquilas.</h1>
+                    <p>A agência de viagens evoluiu. Inovamos de ponta a ponta
+                        a sua gestão de viagens corporativas.</p>
+                    <a class="btn bt-primary hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
                 </div>
+            </div>
+        </div>
+   </div>
+</section>
+<section>
+    <div id="wrapper">
+        <befly-widget language="pt-br" new-tab="true">
+        </befly-widget>
+      </div>
+      <script type="text/javascript" src="https://static.onertravel.com/widget/search/production/widget-befly.js">
+      </script>
+</section>
 
-                <!-- Paginação -->
-                <div class="swiper-pagination"></div>
+
+<section class="section">
+    <div class="container">
+        <div class="row item-center">
+            <div class="col-8 center p-2">
+                <h1 data-aos="fade-up">POR QUE ESCOLHER A LUCK?</h1>
+                <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="feactures">
+                    <i class="bi bi-airplane"></i>
+                    <h3 class="card-title">Viagens Incriveis</h3>
+                    <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                    <a class="hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                </div>       
+            </div>
+
+            <div class="col-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="feactures">
+                    <i class="bi bi-globe-americas"></i>
+                    <h3 class="card-title">Descubra</h3>
+                    <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                    <a class="hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                </div>       
+            </div>
+
+            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="feactures">
+                    <i class="bi bi-flag-fill"></i>
+                    <h3 class="card-title">Reserve Sua Viagem</h3>
+                    <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                    <a class="hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                </div>       
+            </div>
+
+            <div class="col-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="feactures">
+                    <i class="bi bi-wechat"></i>
+                    <h3 class="card-title">Ótimo Atendimento</h3>
+                    <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                    <a class="hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                </div>       
+            </div>
 
         </div>
-                <!-- Botões de Navegação -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row center-left card-effect" data-aos="fade-zoom-in" data-aos-delay="300">
+            <div class="col-8 pm-0 overflow">
+                <!-- Swiper -->
+                <div class="swiper slide" >
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                                <img src="assets/img/walt-diney.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/img/paris.jpg" alt="">
+                       </div>
+
+                       <div class="swiper-slide">
+                        <img src="assets/img/Recife.jpg" alt="">
+                      </div>
+
+                    </div>
+                </div> 
+            </div>
+             <!-- Swiper End -->
+            <div class="col-7 overflow">
+                <!-- Swiper -->
+                <div class="swiper slide">
+                    <div class="swiper-wrapper">
+                
+                        <div class="p-2 swiper-slide">
+                            <h1>Viage com sua familia para Walt Disney World!</h1>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart</p>
+                            <a class="btn bt-action hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                        </div>
+
+                        <div class="p-2 swiper-slide">
+                            <h1>Conheça Paris</h1>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart</p>
+                            <a class="btn bt-action hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                        </div>
+
+                        <div class="p-2 swiper-slide">
+                            <h1>Conheça a Veneza Brasileira</h1>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart</p>
+                            <a class="btn bt-action hvr-icon-wobble-horizontal" href="">Saiba mais <i class="bi bi-arrow-right-short hvr-icon"></i></a> 
+                        </div>
+                    </div>
+                    <!-- Navegation -->
+                     <div class="navegation">
+                        <div class="swiper-button-prev">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div> 
+               
+            <!-- Swiper End -->
+            </div>
+       </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb">
+                <h1>Título do Card</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="assets/img/img01.jpg" alt="Imagem do Card">
+                    <div class="card-content">
+                        <h2 class="card-title">Título do Card</h2>
+                        <p class="card-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="assets/img/img02.jpg" alt="Imagem do Card">
+                    <div class="card-content">
+                        <h2 class="card-title">Título do Card</h2>
+                        <p class="card-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="assets/img/img04.jpg" alt="Imagem do Card">
+                    <div class="card-content">
+                        <h2 class="card-title">Título do Card</h2>
+                        <p class="card-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 
-
-        <!--==================== SECTION 2 =========================-->
-
-        <section class="promotion" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/map.jpg') center/cover no-repeat;">
-            <div class="container-med">
-                <div class="row" style="display: flex;">
-                    <div class="col-6" style="margin-bottom: 0;">
-                        <img src="assets/img/casal.png" alt="">
+<section class="section testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb">
+                <h1 data-aos="fade-up" data-aos-delay="100">O que dizem os clientes sobre nós?</h1>
+            </div>
+        </div>
+    <div class="swiper-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper testimonial">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card p-3">
+                             <div class="card-header">
+                                <img class="image-radius" src="assets/img/vetor-de-ícone-perfil-do-avatar-padrão-foto-usuário-mídia-social-183042379.webp" alt="">
+                                <div class="card-content">
+                                   <h2 class="card-title">Joe Doe</h2>
+                                   <p>SEO corporation</p>
+                               </div>
+                            </div>
+                        <div class="card-body">
+                            <p class="card-text left">"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of 
+                                spring which I enjoy with my whole heart."</p>
+                        </div>
                     </div>
-                    <div class="col-6" style="display: flex; align-items: center; text-align: center;">
-                      <div class="content">
-                          <h1 class="title-white" >Descubra Destinos Incríveis com Ofertas Imperdíveis!</h1>
-                          <p data-aos="fade-up"> Viajar é mais do que apenas conhecer novos lugares, é viver histórias, colecionar momentos e se conectar com diferentes culturas. 
-                            Com a Luck, você tem acesso a pacotes exclusivos e suporte completo para tornar sua viagem inesquecível</p>
-                          <a class="btn bt-alert"  data-section="section1" href="#">Ver promoção</a>
-                      </div>
-                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card p-3">
+                             <div class="card-header">
+                                <img class="image-radius" src="assets/img/vetor-de-ícone-perfil-do-avatar-padrão-foto-usuário-mídia-social-183042379.webp" alt="">
+                                <div class="card-content">
+                                   <h2 class="card-title">Joe Doe</h2>
+                                   <p>SEO corporation</p>
+                               </div>
+                            </div>
+                        <div class="card-body">
+                            <p class="card-text left">"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of 
+                                spring which I enjoy with my whole heart."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card p-3">
+                             <div class="card-header">
+                                <img class="image-radius" src="assets/img/vetor-de-ícone-perfil-do-avatar-padrão-foto-usuário-mídia-social-183042379.webp" alt="">
+                                <div class="card-content">
+                                   <h2 class="card-title">Joe Doe</h2>
+                                   <p>SEO corporation</p>
+                               </div>
+                            </div>
+                        <div class="card-body">
+                            <p class="card-text left">"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of 
+                                spring which I enjoy with my whole heart."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card p-3">
+                             <div class="card-header">
+                                <img class="image-radius" src="assets/img/vetor-de-ícone-perfil-do-avatar-padrão-foto-usuário-mídia-social-183042379.webp" alt="">
+                                <div class="card-content">
+                                   <h2 class="card-title">Joe Doe</h2>
+                                   <p>SEO corporation</p>
+                               </div>
+                            </div>
+                        <div class="card-body">
+                            <p class="card-text left">"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of 
+                                spring which I enjoy with my whole heart."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="promotional">
-          <div class="container">
-            <h1 class="title" data-aos="fade-up">Pacotes Promocionais</h1>
-                   <!-- Swiper -->
-                   <div class="swiper promo">
-                      <div class="swiper-wrapper">
-          
-                          <div class="swiper-slide" data-aos="fade-up">
-                              <div class="promo-card">
-                                  <img src="assets/img/image2.jpg" alt="Promoção 1" class="promo-img">
-                                    <div class="promo-overlay">
-                                        <div class="promo-content">
-                                          <h2 class="title-white">Recife</h2>
-                                          <p>Texto no Card Promocional</p>
-                                          <a href="#" class="btn transparent">Saiba Mais</a>
-                                       </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" data-aos="fade-up">
-                              <div class="promo-card">
-                                  <img src="assets/img/image03.jpg" alt="Promoção 1" class="promo-img">
-                                  <div class="promo-overlay">
-                                    <div class="promo-content">
-                                      <h2 class="title-white">Recife</h2>
-                                      <p>Texto no Card Promocional</p>
-                                      <a href="#" class="btn transparent">Saiba Mais</a>
-                                   </div>
-                              </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" data-aos="fade-up">
-                              <div class="promo-card">
-                                  <img src="assets/img/image04.jpg" alt="Promoção 1" class="promo-img">
-                                  <div class="promo-overlay">
-                                    <div class="promo-content">
-                                      <h2 class="title-white">Recife</h2>
-                                      <p>Texto no Card Promocional</p>
-                                      <a href="#" class="btn transparent">Saiba Mais</a>
-                                   </div>
-                                 </div>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" data-aos="fade-up">
-                              <div class="promo-card">
-                                  <img src="assets/img/image03.jpg" alt="Promoção 1" class="promo-img">
-                                  <div class="promo-overlay">
-                                    <div class="promo-content">
-                                      <h2 class="title-white">Recife</h2>
-                                      <p>Texto no Card Promocional</p>
-                                      <a href="#" class="btn transparent">Saiba Mais</a>
-                                   </div>
-                                 </div>
-                              </div>
-                          </div>
-      
-                      </div>
-                      <div class="swiper-pagination"></div>
-                  </div>
-      
-          </div>
-        </section>
-        
+        </div>
     
+        <div class="swiper-pagination"></div>
+        <!-- Navegation -->
+
+        <div class="testimonial-prev">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+        </div>
+        <div class="testimonial-next">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+        </div>
+    </div>
+    
+</section>
 
 
+<!-- FOOTER -->
+<footer class="section">
+    <div class="container">
+        <div class="row space-between">
+            <div class="col-3">
+                <img src="assets/img/logo.webp" alt="" style="width: 150px;">
+                <p style="font-size: 15px;">1970. Em uma década de marcos para a história e para o comportamento da humanidade...</p>
+                     <a class="hvr-underline-from-left" href="">Saiba mais</a>
+                     <div style="width: 35%; margin-top: 15px;">
+                        <h4>Siga-nos</h4>
+                        <ul class="row">
+                           <li class="col-4"><a href=""><i class="bi bi-instagram"></i></a></li>
+                           <li class="col-4"><a href=""><i class="bi bi-facebook"></i></a></li>
+                           <li class="col-4"><a href=""><i class="bi bi-twitter-x"></i></a></li>
 
-         
-        <!--==================== FOOTER =========================-->
-          
-        <footer>
-            <div class="container">
-                <di class="row">
-                        <div class="col-4">
-                          <a class="navbar-logo" href="https://ellostudiolondon.com/staging/index.html"><img src="assets/img/logo.webp" alt="luckviagens-logo"></a>
-                          <p style="font-size: 14px; text-align: justify;">Mil novecentos e sessenta. Em uma década de marcos para a história e para o comportamento da humanidade, o potiguar e filho de alemães Hans Walter Luck fundou a Luck Viagens. Mais do que o nome da família, a empresa foi batizada com a palavra que, em português, significa "sorte" aquela que acompanha os audazes, como diz o ditado.</p>
-                       </div>
-                    <div class="col-4">
-                      <form class="contact-form">
-                        <h1 class="title">Receba nossos informativos</h1>
-      
-                        <div class="form-group">
-                          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-                        </div>
-                        <div class="form-group">
-                          <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
-                        </div>
-                        <div class="form-group">
-                          <input type="text" id="celular" name="celular" placeholder="Digite seu Celular" required>
-                        </div>
+                        </ul>
+                  </div>    
+            </div>
+            <div class="col">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a class="hvr-underline-from-left" href="">Sobre a Luck Viagens</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Transparencia</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Blog</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Galeria Memoriais</a></li>
+                </ul>
+                <h4>Corporativo</h4>
+                <ul>
+                    <li><a class="hvr-underline-from-left" href="">Para Pequenas Empresas</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Para Grandes Empresas</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Pacotes de Viagens</h4>
+                <ul>
+                    <li><a class="hvr-underline-from-left" href="">Nacionais</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Internacionais</a></li>
+                </ul>
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a class="hvr-underline-from-left" href="">Política de Privacidade</a></li>
+                    <li><a class="hvr-underline-from-left" href="">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a class="hvr-underline-from-left" href=""><i class="bi bi-telephone-fill"></i> (81) 3366-6222</a></li>
+                    <li><a class="hvr-underline-from-left" href=""><i class="bi bi-telephone-fill"></i> (81) 3366-6223</a></li>
+                    <li><a class="hvr-underline-from-left" href=""><i class="bi bi-whatsapp"></i> (81) 99323-1583</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row space-between">
+            <div class="col-12">
+              <p class="copyright">© 2025 Luck Viagens – Todos os direitos reservados</p>
+            </div>  
+        </div>
+    </div>
+</footer>
  
-                        <button class="btn bt-orange" type="submit">CADASTRAR</button>
-                      </form>
-                    </div>
-                    <div class="col-4">
-                      <h1 class="title">Contatos</h1>
-                      <ul class="information">
-                       <a href="#"><i class="bi bi-envelope"></i> marketing@luckviagens.com.br</a>
-                       <a href="#"><i class="bi bi-telephone-fill"></i> (81) 3366-6222 | (81) 3366-6223</a>
-                       <a href="#"><i class="bi bi-whatsapp"></i> (81) 99323-1583</a>
-                       <a href="#"><i class="bi bi-geo-alt-fill"></i> Avenida Conselheiro Aguiar, 456, Loja 02 - Empresarial Alacoque Bezerra , Boa Viagem - Recife - PE | CEP 51011-031</a>
-                       </ul>
-                        <div style="width: 35%; margin-top: 15px;">
-                            <h1 class="title">Siga-nos</h1>
-                            <ul class="social-media">
-                               <li><a href="https://www.instagram.com/caterstaff_of_boston/"><i class="bi bi-instagram"></i></a></li>
-                               <li><a href="https://www.facebook.com/Caterstaff/"><i class="bi bi-facebook"></i></a></li>
-                               <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
-    
-                            </ul>
-                      </div>
-                    </div>
-                </di>
-                <div class="row">
-                    <div class="col-12 ml-0">
-                        <p class="copyright">© 2025 Luck Viagens - All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-
-
-
-        <div class="cookie-banner" id="cookieBanner">
-            <div class="row flex al-center">
-              <div class="col-8">
-                 <p>We use cookies to analyse the traffic of our site, provide you with personalised content, interest-based advertising and content from social platforms. 
-                  You can select your cookie preferences or obtain more information on cookies by clicking on Personalise or at any time in our Privacy Policy. 
-                  You can click on Accept or Reject to accept or refuse all cookies <a href="/politica-de-privacidade.html" target="_blank">Política de Privacidade</a>.</p>
-                </div>
-                <div class="col-4 content-center">
-                  <div class="buttons">
-                    <button class="accept" id="acceptCookies">Accept</button>
-                    <button class="reject" id="rejectCookies">Reject</button>
-                  </div>
-              </div> 
-            </div>
-          </div>
-    
+  <script src="assets/js/script.js"></script>  
   <script src="assets/js/swiper-bundle.min.js"></script>
-
-  <script src="assets/js/aos.js"></script>
-  <script src="assets/js/functions.js"></script>
   <script src="assets/js/slide.js"></script>
-  
-  
-  <script >
+  <script src="assets/js/aos.js"></script>
 
-    var swiper = new Swiper('.webdoor', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    
-      // Função para pausar todos os vídeos e reproduzir o vídeo do slide ativo
-      function handleVideoPlayback() {
-        // Pausar todos os vídeos
-        const allVideos = document.querySelectorAll('.swiper-slide video');
-        allVideos.forEach((video) => {
-          video.pause();
-          video.currentTime = 0; // Reiniciar o vídeo
-        });
-    
-        // Reproduzir o vídeo do slide ativo
-        const activeSlide = document.querySelector('.swiper-slide-active video');
-        if (activeSlide) {
-          activeSlide.play().catch((error) => {
-            console.warn('Erro ao reproduzir o vídeo:', error);
-          });
-        }
-      }
-    
-      // Reproduzir o vídeo inicial ao carregar a página
-      window.addEventListener('load', handleVideoPlayback);
-    
-      // Detectar mudanças de slide
-      swiper.on('slideChangeTransitionEnd', handleVideoPlayback);
-    
-      // Garantir que os vídeos sejam pausados ao sair do slide ativo
-      swiper.on('slideChangeTransitionStart', () => {
-        const allVideos = document.querySelectorAll('.swiper-slide video');
-        allVideos.forEach((video) => {
-          video.pause();
-        });
-      });
-    
+  <script>
+     AOS.init();
+  </script>
 
-      
-          </script>
-    
-          <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const idaVolta = document.getElementById("idaVolta");
-    const somenteIda = document.getElementById("somenteIda");
-    const dataVolta = document.getElementById("dataVolta");
-
-    function toggleDataVolta() {
-        const isDisabled = somenteIda.checked;
-        dataVolta.disabled = isDisabled;  // Desabilita o campo
-        dataVolta.style.opacity = isDisabled ? "0.5" : "1";  // Aplica a opacidade
-    }
-
-    idaVolta.addEventListener("change", toggleDataVolta);
-    somenteIda.addEventListener("change", toggleDataVolta);
-
-    toggleDataVolta(); 
-});
-
-
-          </script>
-               
-    
-    </body>
-    </html>
-    
 
 </body>
 </html>
