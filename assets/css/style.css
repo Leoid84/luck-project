@@ -359,6 +359,7 @@ nav ul li a:active:before,nav ul li a:focus:before,nav ul li a:hover:before {
     object-fit: cover;
 }
 .card-list-content {
+    width: 50%;
     padding: 3rem;
 }
 .card-list .btn{
