@@ -3,7 +3,7 @@
 
 
 
-/*========================== Menu ====================== */
+/*========================== NAVBAR ====================== */
 
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".menu").addEventListener("click", function() {
@@ -18,4 +18,17 @@ window.addEventListener("scroll", function() {
     } else {
         navbar.classList.remove("nav-fixed");
     }
+});
+
+/*========================== Menu ====================== */
+
+document.addEventListener("scroll", function() {
+    let scrollTop = window.scrollY; // Obtém a posição do scroll
+
+    document.querySelectorAll(".parallax").forEach(parallax => {
+        let speed = parallax.dataset.speed || 8; // Pega a velocidade do HTML (padrão = 5)
+        let yPos = -(scrollTop / speed); // Calcula a posição
+
+        parallax.style.backgroundPosition = `center ${yPos}px`; // Aplica o efeito
+    });
 });
